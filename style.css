@@ -1,0 +1,43 @@
+/* RESET & BASE */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Arial',sans-serif;background:#f5f6f1;color:#333;line-height:1.6;opacity:1;}
+
+/* HEADER */
+.top-header{text-align:center;padding:25px;background:linear-gradient(135deg,#0b3d22,#145f35);color:#fff9d6;border-bottom:4px solid gold;}
+.logo{font-size:45px;font-family:'Scheherazade New', serif;margin-bottom:5px;}
+.subtitle{font-size:16px;color:#e8f5e9;}
+.menu{margin-top:15px;}
+.menu a{margin:0 12px;text-decoration:none;color:#fff9d6;font-weight:bold;transition:all 0.3s ease;}
+.menu a:hover,.menu a.active{color:gold;transform:scale(1.1);}
+
+/* SEARCH */
+.search-container{margin:15px auto;position:relative;}
+#search{padding:12px 20px;width:250px;border-radius:30px;border:none;outline:none;font-size:16px;}
+#search:focus{box-shadow:0 0 8px #1a702f;}
+
+/* SECTIONS */
+section{padding:40px;background:#fff;margin:20px auto;max-width:900px;border-radius:12px;box-shadow:0 0 15px rgba(0,0,0,0.1);}
+section.visible{opacity:1;transform:translateY(0);transition:all 0.7s ease;}
+
+/* AYAH */
+.ayah{background:#f7fbf7;margin-bottom:18px;padding:12px 15px;border-left:4px solid #1a702f;border-radius:10px;cursor:pointer;transition:all 0.3s ease;}
+.ayah:hover,.ayah.active-highlight{background:#d9ffe0;transform:scale(1.02);box-shadow:0 4px 15px rgba(0,128,0,0.3);}
+.ar{font-family:'Scheherazade New', serif;font-size:28px;text-align:right;direction:rtl;}
+.en{font-size:17px;margin-top:5px;color:#222;}
+.ur{font-family:'Noto Nastaliq Urdu', serif;font-size:22px;text-align:right;direction:rtl;margin-top:5px;color:#003300;}
+
+/* FOOTER */
+footer{text-align:center;padding:20px;background:#0b3d22;color:#fff9d6;border-top:4px solid gold;}
+
+/* BUTTONS */
+button,.auth-btn{padding:12px 20px;border:none;border-radius:10px;background:#125f31;color:white;font-size:16px;cursor:pointer;transition:all 0.3s ease;}
+button:hover,.auth-btn:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(0,128,0,0.4);}
+
+/* LOGIN/SIGNUP */
+.auth-bg{background:#e8f5e9;min-height:100vh;display:flex;align-items:center;justify-content:center;}
+.auth-box{background:white;width:350px;padding:30px;text-align:center;border-radius:18px;box-shadow:0 5px 18px rgba(0,0,0,0.2);opacity:1;transform:translateY(0);}
+.auth-box input{width:90%;padding:12px;margin:10px 0;border-radius:10px;border:1px solid #ccc;}
+.auth-box input:focus{border-color:#1a702f;box-shadow:0 0 8px #1a702f;outline:none;}
+
+/* RESPONSIVE */
+@media(max-width:768px){#search{width:80%;}.menu a{display:block;margin:10px 0;}section{margin:20px 10px;}}
